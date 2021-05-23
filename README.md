@@ -52,7 +52,7 @@ reapet function: specifies, as a space-separated track list, the line names and 
 
 Shorthand: Shorthand for setting grid-template-columns, grid-template-rows, and grid-template-areas in a single declaration.
 
-Syntax: none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?
+Syntax: none |  <'grid-template-rows'> / <'grid-template-columns'>  |  <line-names>? <string> <track-size>? <line-names>? / <explicit-track-list> 
 
 ```
 .container{
