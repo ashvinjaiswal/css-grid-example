@@ -61,3 +61,44 @@ Syntax: none |  <'grid-template-rows'> / <'grid-template-columns'>  |  <line-nam
     gap: 5px;
 }
 ```
+
+### Example 3: Placement of item
+Items that are not explicitly placed on the grid will be placed according to an algorithm. We use grid-column-start, grid-column-end, grid-row-start and grid-row-end to define where an item starts and ends on the grid.
+
+```
+.header{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+//Short Hand start/end
+
+.header{
+  grid-column:1/3;
+}
+```
+In above example, we used class selector to select element and select postion based on grid column lines.
+
+```
+.footer{
+  grid-column:1/3;
+}
+
+//alternate way
+.footer{
+  grid-column:1/span 2;
+}
+
+```
+In above example, select first grid column line and span element to two columns
+
+
+```
+.footer{
+  grid-column:1/-1;
+}
+```
+In above example, select first column grid line and span element to last column grid line 
+
+#### Resource 
+[Grid Vocabulary](https://www.digitalocean.com/community/tutorials/css-css-grid-layout-intro)
